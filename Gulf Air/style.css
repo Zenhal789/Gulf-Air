@@ -1,0 +1,1461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&family=Oswald&display=swap');
+body{
+    margin: 0;
+}
+.joinbtn{
+    background-color: #b39b6d;
+    color: #fff;
+    border: #b39b6d;
+    border-radius: 5px;
+    height: 35px;
+    width: auto;
+    transition: all 0.2s ease-in-out;
+}
+.joinbtn:hover{
+    background-color: rgb(55, 168, 168);
+}
+.loginbtn{
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+}
+.country{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 5px;
+    font-size: larger;
+}
+.country:hover{
+    color: #fff;
+}
+.navbar1{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    font-family: "Montserrat";
+    color: #fff;
+    font-weight: bold;
+}
+header{
+    z-index: 9999;
+    position: relative;
+}
+.navbar2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Montserrat";
+    color: #fff;
+    font-weight: bold;
+
+}
+.logo{
+    z-index: 9999;
+}
+.glogo{
+    width: 60%;
+}
+.navcontent1 a, .navcontent2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.navcontent1, .navcontent2{
+    display: flex;
+    gap: 25px;
+    z-index: 9999;
+}
+#nav-mob{
+    display: none;
+}
+#larnaca{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    filter: brightness(50%);
+}
+#carouselExampleCaptions{
+    top: -122px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-caption{
+    letter-spacing: 2px;
+    text-align: justify !important;
+    bottom: 17rem !important;
+}
+#bookbtn{
+    height: 50px;
+    width: 150px;
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    border-radius: 5px;
+}
+.book{
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    margin-top: -122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    color: #000;
+    font-weight: bolder;
+
+}
+.ticketcheck{
+    height: auto;
+    width: 1150px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.buttons{
+    display: flex;
+}
+#btnticket{
+    height: 50px;
+    width: 288px;
+    background-color:#362636;
+    color: #fff;
+    border-right-color: #fff;
+}
+
+.book .buttons input[type="button"]:first-child {
+    border-top-left-radius: 15px;
+}
+
+.book .buttons input[type="button"]:last-child {
+    border-top-right-radius: 15px;
+}
+
+#booking{
+    display: flex;
+    gap: 28px;
+    list-style-type: none;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+#booking li a{
+    color: #000;
+    font-weight: 700;
+}
+.line{
+    opacity: 2.25;
+    position: relative;
+    width: 95%;
+    left: 31px;
+}
+.radios{
+    margin-left: 35px;
+}
+.advsearch{
+    float: right;
+    color: #000;
+}
+
+.destination{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.arrowbtn{   
+    margin-top: 29px;
+    height: 36px;
+    border: none;
+    background-color: white;
+}
+label{
+    font-weight: bold;
+}
+.travel{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+#cls{
+    width: 550px;
+}
+#cld{
+    width: 355px;
+}
+.manage-main, .checkin-main, .flightstatus-main{
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+.managetitle{
+    color: #000;
+    padding: 20px;
+    font-weight: 600;
+}
+.reference{
+    display: flex;
+    margin-left: 21px;
+    justify-content: space-evenly;
+}
+#btn2{    
+    margin: 33px;
+    width: 140px;
+    height: 40px;
+    background-color: #b39b6d;
+    color: #fff;
+    border: #b39b6d;
+}
+.btnn1{
+    display: flex;
+    align-items: center;
+}
+.changetext{
+    margin-top: 15px;
+}
+.airporttxt{
+    padding: 20px;
+    color: #000;
+}
+.checkintxt{
+    text-decoration: underline;
+    color: #b39b6d;
+}
+#flightstatus{
+    display: flex;
+    padding: 20px;
+    gap: 52px;
+}
+.andorbtn{
+    color: #fff;
+    background-color: #000;
+    margin-top: 27px;
+}
+.bookmob{
+    display: none;
+}
+.btn4{
+    width: 140px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: #000;
+}
+.viewoffers{
+    height: auto;
+    background-color:#14141f;
+    text-align: center;
+}
+.offerhead{
+    color: #fff;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#offerdrp{
+    background-color: #14141f;
+    color: #fff;    
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.offerbtn{
+    background-color: #14141f;
+    color: #fff;
+    border: 1px solid whitesmoke;
+    width: 300px;
+    height: 50px;
+    transition: all 0.1s ease-in;
+}
+.offerbtn:hover{
+    border: 2px solid white;
+}
+.cards{
+    margin-top: -105px;
+}
+
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.cards {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+
+
+.card .card-title {
+    font-size: 20px;
+}
+
+.card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+
+ .card-link-wrapper {
+    margin-top: auto;
+}
+
+.card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition:  0.2s;
+}
+
+
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #b39b6d;
+}
+
+.cards::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+#c1{
+    background: url(./images/AMM-364X400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover{
+   transform: scale(1.1);
+}
+#c2{
+    background: url(./images/ATH-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c3{
+    background: url(./images/BAH-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c4{
+    background: url(./images/BKK-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c5{
+    background: url(./images/MXP-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c6{
+    background: url(./images/FCO-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#c7{
+    background: url(./images/TBS-364x400.jpg);
+    width: 94%;
+    transition:  .2s;
+}
+#ctitle{
+    color: #fff;
+    float: left;
+    font-size: xx-large;
+}
+#card-link{
+    float: left;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+}
+#arrow{
+    float: inline-end;
+    font-size: larger;
+    margin-top: -35px;
+    color: #fff;
+}
+.img-f1{
+    width: 100%;
+    margin-top: -26px;
+}
+.grandprixbtn{
+    height: 50px;
+    width: 200px;
+    background-color: #b39b6d;
+    border: #b39b6d;
+    color: #fff;
+}
+.textf1{
+    
+    margin-top: -504px;
+    color: white;
+    position: absolute;
+    padding: 50px;
+}
+.textf1 p{
+    width: 51%;
+    color: #fff;
+}
+.card-link{
+    background: none;
+}
+.helpsection{
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    padding: 80px;
+}
+.search1 p{
+    color: #000;
+    font-size: medium;
+}
+.search1{
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+#text-box {
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: #000; 
+    width: 500px; 
+    height: 50px;
+    margin-top: -15px;
+  }
+  .slide-container{
+    margin-top: -150px;
+}
+.quicksupport h1{
+    
+    color: black;
+    padding: 0 78px;
+    font-family: 'Montserrat', sans-serif;
+}
+.bahrain{
+    width: 70%;
+    background: #00a09c;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.visitbahrain{
+    display: flex;
+}
+.stopover2 p{
+    width: 100%;
+    color: #fff;
+}
+.stopover{
+    display: grid;
+    gap: 16px;
+}
+.stopover h6{
+    font-family: "Oswald";
+    letter-spacing: 2px;
+}
+.stopover h1{
+    font-family: "Kdam Thmor Pro";
+}
+.bimage img{
+    transition: all .2s ease-in-out;
+}
+.bimage img:hover{
+    filter: brightness(50%);
+}
+.btnvideo{    
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    margin-left: -369px;
+    margin-top: 222px;
+}
+.pmob{
+    color: #fff;
+}
+.gulfairapp{
+    display: flex;
+    background-color: rgba(161,143,99,.23);
+    align-items: center;
+    gap: 15px;
+}
+.appimg{
+    width: 100%;
+}
+.apptext{
+    width: 100%;
+    text-align: center;
+    color: #14141f;
+}
+.apptext h2{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Kdam Thmor Pro";
+
+}
+.apptext p{
+    color: #14141f;
+}
+#newslettertext{
+    height: 360px;
+    width: 900px;
+    background-color: #14141f;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+.formtext{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+}
+.ntext{
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#imgcrew{
+    display: none;
+}
+/* .textnews h2{
+    font-family: ;
+} */
+.marketing{
+    padding: 0 141px;
+}
+.newsletterimg img{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.footer-wrapper{
+    height: auto;
+    width: 100%;
+    background-color: #1e1e2e;
+    display: flex;
+    padding: 53px;
+    gap: 30px;
+}
+.footerimg img{
+    width: 15%;
+    position: absolute;
+}
+.footercontent , .footercontent2 , .footercontent3, .footercontent1{
+    list-style-type: none;
+    line-height: 40px;
+}
+.footercontent1 ul, .footercontent ul{
+    list-style-type: none !important;
+}
+.fthead{
+    color: #fff;
+    font-size: larger;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+.footercontent li a , .footercontent1 li a , .footercontent2 li a, .footercontent3 li a{
+color: #fff;
+font-family: "Montserrat";
+
+}
+
+#icons{
+    font-size: xx-large;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+#icons:hover{
+    color: #b39b6d;
+}
+#skytrax, #skytrax1, #skystrax2{
+    width: 6%;
+}
+.footerimg span{
+    
+    display: flex;
+    gap: 115px;
+    margin-top: 70px;
+}
+.footerimg li{
+    list-style-type: none;
+}
+.subscribe{
+    background-color: #1e1e2e;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: start;
+}
+#email{
+    display: flex;
+}
+#btn3{
+    width: 75px;
+    height: 43px;
+    border: none;
+    background-color: #b39b6d;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.news h3, .news p{
+    color: #fff;
+    font-family: "Montserrat";
+}
+.hear{
+    margin-left: 51px;
+}
+.heartext{
+    color: #fff;
+    font-weight: bold;
+}
+.exp{
+    width: 50%;
+    color: #fff;
+}
+.btn9{
+    width: 140px;
+    height: 40px;
+    background-color: #b39b6d;
+    border: #b39b6d;
+    color: #fff;
+    border-radius: 10px;
+}
+#btn9{
+    width: 120px;
+    height: 40px;
+    background-color: #1e1e2e;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+.heartext, .exp{
+    font-family: "Montserrat";
+}
+.btns1{
+    margin-left: -40px;
+}
+.reserved{
+    width: 100%;
+    height: auto;
+    background-color: #14141f;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    font-family: "Montserrat";
+}
+.rights p{
+    color: #fff;
+}
+.privacy a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------responsive for larger mobiles------------------------------------------------- */
+@media(max-width:768px){
+    body{
+       margin: 0;
+       box-sizing: border-box;
+    }
+    html , body{
+        overflow-x: hidden;
+    }
+    header{
+        display: none;
+    }
+    .carouselmob{
+        display: block;
+    }
+    .navbar2{
+        display: none;
+    }
+   
+    #nav-mob {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    }
+
+    #nav-mob.scrolled {
+        background-color: #b39b6d; 
+        .glogo-mob {
+            background-color: #b39b6d; 
+        }
+
+        .ri-menu-line {
+            color: #fff; 
+        }
+    }
+    #nav-mob{
+        display: block;
+        border: transparent;
+        font-family: "Montserrat";
+        color: #000;
+        font-weight: 700;
+    }
+    #carouselExampleCaptions{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .glogo-mob{
+        width: 40%;
+    }
+    #icon{
+        color: #fff;
+        font-size: larger;
+    }
+    #larnaca{
+        height: 550px;
+    }
+    .carousel-caption{
+        bottom: 10rem !important;
+        text-align: left !important;
+    }
+    .headmob{
+        font-size: large;
+        font-family: "Montserrat";
+        color: #fff;
+        font-weight: bolder;
+    }
+    .changetxt1{
+        color: #000;
+    }
+   .pmob{
+    font-size: small;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: bolder;
+   }
+   .offcanvas-header{
+    background-color: #b39b6d;
+   }
+   .offcanvas-title{
+    color: #fff;
+   }
+   .close{
+    background-color: #b39b6d;
+    border: none;
+   }
+   .ri-close-line{
+    font-size: x-large;
+    color: #fff;
+   }
+   .btnmob{
+    background-color: #b39b6d;
+    height: 50px;
+    width: 350px;
+    border: none;
+    color: #fff;
+   }
+   .btnmob1{
+    background-color: #000;
+    height: 50px;
+    width: 350px;
+    border: none;
+    color: #fff;
+   }
+   .btn1{
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    width: 13%;
+   }
+   #search{
+    width: 80%;
+   }
+   .ri-arrow-right-line{
+    float: inline-end;
+    font-size: larger;
+    font-weight: 900;
+   }
+   .ticketcheck, .book{
+    display: none;
+   }
+   .bookmob{
+    height: auto;
+    background-color: #000;
+    margin-top: -122px;
+    display: block;
+    font-family: "Montserrat";
+
+   }
+   .bookbtnmob, .managebtnmob, .flightstatusbtnmob, .checkinbtnmob{
+    height: 50px;
+    width: 330px;
+    background-color: #362636;
+    color: #fff;
+    font-family: "Montserrat";
+
+    
+   }
+   .btns{
+    padding: 20px;
+    text-align: center;
+    font-family: "Montserrat";
+
+   }
+   .bookingmob, .managemob, .checkmob, .fltstatusmob{
+    background-color: whitesmoke;
+    height: auto;
+    width: 330px;
+    margin-left: 21px;
+
+   }
+ #bookingmob{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-left: 30px;
+ }
+ #bookingmob li a{
+    color: #000;
+    font-weight: 700;
+ }
+ .advmob{
+    color: #000;
+    text-decoration: none;
+ }
+ .booking1mob{
+    padding: 20px;
+ }
+ .fromtxt{
+    float: inline-start;
+ }
+ .btnmob2{
+    background-color: #b39b6d;
+    color: #fff;
+    border: #b39b6d;
+    width: 290px;
+    height: 50px;
+ }
+ .btnmob3{
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    width: 290px;
+    height: 50px;
+ }
+ .managemob, .checkmob, .fltstatusmob{
+    display: none;
+ }
+ .mngtrp{
+    text-align: left;
+ }
+ .managemob, .checkmob, .fltstatusmob{
+    padding: 20px;
+ }
+ .changetext1{
+    text-align: left;
+    font-size: small;
+ }
+ .bookmob .btns .bookbtnmob{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+ .bookmob .btns .flightstatusbtnmob{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+ }
+ .viewoffers{
+    text-align: center;
+ }
+ #c1, #c2, #c3, #c4, #c5 ,#c6, #c7{
+    background-repeat: no-repeat;
+ }
+
+.textf1{
+    margin-top: -240px;
+}
+.textf1 h1{
+    font-size: xx-large;
+}
+.textf1 p{
+    font-size: small;
+    width: 100%;
+}
+.grandprixbtn{
+    width: 150px;
+    height: 40px;
+}
+.card-link{
+    background: none;
+}
+.search1{
+    display: block;
+}
+#text-box{
+    width: 350px;
+}
+.helpsection{
+    padding: 20px;
+}
+
+.cards{
+    margin-top: -185px;
+}
+.slide-container{
+    margin-top: -150px;
+}
+.quicksupport h1{
+  margin-top: 10px;
+  padding: 0 23px;
+}
+.offerhead{
+position: relative;
+top: -12px;
+}
+#offerdrp{
+    text-underline-offset: 7px;
+}
+.img-f1{
+    height: 300px;
+}
+.visitbahrain{
+    display: block;
+}
+.bahrain{
+    height: 400px;
+    width: 100%;
+}
+.bimage img{
+    width: 100%;
+}
+.btnvideo{
+    margin-top: 110px;
+    margin-left: -250px;
+}
+.qrimg{
+    display: none;
+}
+.gulfairapp{
+    display: block;
+
+}
+.appimg img{
+    width: 100%;
+}
+.apptext h2{
+    position: relative;
+    top: 20px;
+}
+ .newsletter{
+    display: block;
+ }
+ #form, .formtext{
+    display: block;
+ }
+ #newslettertext{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    border-radius: 0;
+ }
+ .newsletterimg img{
+   display: none;
+ }
+ #form8{
+    width: 90%;
+ }
+ #btn2{
+    width: 85%;
+ }
+ #imgcrew{
+    display: block;
+    width: 100%;
+ }
+ .marketing{
+    padding: 0 10px;
+ }
+ .footer-wrapper{
+    width: 100%;
+    display: block;
+    margin-top: -42px;
+    padding: 30px;
+    height: 1400px;
+ }
+ .footerimg img{
+    width: 50%;
+ }
+ .footerimg span{
+    width: 100%;
+ }
+ #skytrax, #skytrax1, #skytrax2{
+    width: 13%;
+ }
+ .subscribe{
+    display: block;
+ }
+ .heartext{
+    font-size: large;
+ }
+.exp{
+    color: #fff;
+    width: 100%;
+}
+.hear , .btns1{
+    margin-left: 0;
+}
+.reserved{
+    display: block;
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+@media(min-width:429px) and (max-width:431px){
+    .bookingmob, .managemob, .checkmob, .fltstatusmob{
+        margin-left: 29px;
+    }
+}
+@media(min-width:389px) and (max-width:391px)
+{
+    .bookingmob, .managemob, .checkmob, .fltstatusmob{
+        margin-left: 10px !important;
+    } 
+}
+@media(max-width:390px){
+    .stopover2 p{
+        font-size: x-small;
+    }
+    .btnvideo{
+        margin-left: -221px;
+    }
+   
+}
+@media (min-width:300px) and (max-width:320px){
+    #text-box{
+        width: 290px;
+    }
+    .btns{
+        padding: 0;
+    }
+    .bookbtnmob, .managebtnmob, .checkinbtnmob, .flightstatusbtnmob{
+        width: 100%;
+    }
+    .bookingmob, .managemob, .checkmob, .fltstatusmob{
+        width: 100%;
+        margin-left: -1px;
+    }
+    .btn9{
+        width: 130px;
+    }
+}
+@media(max-width:320px){
+    #email{
+        display: block;
+        text-align: center;
+    }
+    #btn3{
+        margin-top: 10px;
+    }
+}
+@media(min-width:358px) and (max-width:361px){
+    .bookingmob, .managemob, .checkmob, .fltstatusmob {
+        margin-left: 0px !important;
+}
+}
+@media(min-width:429px) and (max-width:431px){
+    .bookingmob, .managemob, .checkmob, .fltstatusmob {
+        margin-left: 31px !important;
+}
+}
+@media(min-width:413px) and (max-width:414px){
+    .bookingmob, .managemob, .checkmob, .fltstatusmob {
+        margin-left: 23px !important;
+}
+}
+
+/* -------------------------------------------responsive for lower mobiles--------------------------------------------- */
+@media(max-width:400px){
+    .btnmob, .btnmob1{
+        width: 320px;
+    }
+    .bookingmob, .managemob, .checkmob, .fltstatusmob{
+        margin-left: 3px;
+    }
+    #text-box{
+        width: 290px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------responsive for tablets------------------------------------------------------- */
+@media(min-width:768px) and (max-width:1400px){
+    header{
+        display: none;
+    }
+    .carouselmob{
+        display: block;
+    }
+    .navbar2{
+        display: none;
+    }
+    #nav-mob {
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+        }
+    
+        #nav-mob.scrolled {
+            background-color: #b39b6d; 
+            .glogo-mob {
+                background-color: #b39b6d; 
+            }
+    
+            .ri-menu-line {
+                color: #fff; 
+            }
+        }
+    #nav-mob{
+        display: block;
+        border: transparent;
+    }
+    #carouselExampleCaptions{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .glogo-mob{
+        width: 25%;
+    }
+    #icon{
+        color: #fff;
+        font-size: larger;
+    }
+    #larnaca{
+        height: 900px;
+    }
+    .carousel-caption{
+        bottom: 10rem !important;
+        text-align: left !important;
+    }
+    .headmob{
+        font-size: xx-large;
+    }
+   .pmob{
+    font-size: large;
+   }
+   .offcanvas-header{
+    background-color: #b39b6d;
+   }
+   .offcanvas-title{
+    color: #fff;
+   }
+   .close{
+    background-color: #b39b6d;
+    border: none;
+   }
+   .ri-close-line{
+    font-size: x-large;
+    color: #fff;
+   }
+   .btnmob{
+    background-color: #b39b6d;
+    height: 50px;
+    width: 350px;
+    border: none;
+    color: #fff;
+   }
+   .btnmob1{
+    background-color: #000;
+    height: 50px;
+    width: 350px;
+    border: none;
+    color: #fff;
+   }
+   .btn1{
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    width: 13%;
+   }
+   #search{
+    width: 80%;
+   }
+   .ri-arrow-right-line{
+    float: inline-end;
+    font-size: larger;
+    font-weight: 900;
+   }
+   .ticketcheck, .book{
+    display: none;
+   }
+   .bookmob{
+    display: block;
+   }
+   .bookmob{
+    height: 820px;
+    background-color: #000;
+    margin-top: -122px;
+    display: block;
+   }
+   .bookbtnmob, .managebtnmob, .flightstatusbtnmob, .checkinbtnmob{
+    height: 50px;
+    width: 530px;
+    background-color: #362636;
+    color: #fff;  
+   }
+   .btns{
+    padding: 20px;
+    text-align: center;
+   }
+   .bookingmob, .managemob, .checkmob, .fltstatusmob{
+    background-color: whitesmoke;
+    height: auto;
+    width: 530px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+ #bookingmob{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    margin-left: 30px;
+ }
+ #bookingmob li a{
+    color: #000;
+    font-weight: 700;
+ }
+ .advmob{
+    color: #000;
+    text-decoration: none;
+ }
+ .booking1mob{
+    padding: 20px;
+ }
+ .fromtxt{
+    float: inline-start;
+ }
+ .btnmob2{
+    background-color: #b39b6d;
+    color: #fff;
+    border: #b39b6d;
+    width: 290px;
+    height: 50px;
+ }
+ .btnmob3{
+    background-color: #000;
+    color: #fff;
+    border: #000;
+    width: 290px;
+    height: 50px;
+ }
+ .managemob, .checkmob, .fltstatusmob{
+    display: none;
+ }
+ .mngtrp{
+    text-align: left;
+ }
+ .managemob, .checkmob, .fltstatusmob{
+    padding: 20px;
+ }
+ .changetext1{
+    text-align: left;
+    font-size: small;
+ }
+ .bookmob .btns .bookbtnmob{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+ }
+ .bookmob .btns .flightstatusbtnmob{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+ }
+ .viewoffers{
+    text-align: center;
+ }
+ .textf1{
+    margin-top: -310px;
+ }
+ .helpsection{
+    padding: 80px;
+ }
+ .slide-container{
+    margin-top: -150px;
+}
+ header .slider{
+    height: 40vh;
+}
+.bimage img{
+    width: 100%;
+}
+.btnvideo{
+    margin-top: 140px;
+    margin-left: -280px;
+}
+.qrimg{
+    display: none;
+}
+.gulfairapp{
+    display: block;
+
+}
+.appimg img{
+    width: 100%;
+}
+.apptext h2{
+    position: relative;
+    top: 20px;
+}
+.newsletter{
+    display: block;
+ }
+ #form, .formtext{
+    display: block;
+ }
+ #newslettertext{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    border-radius: 0;
+
+ }
+ .newsletterimg img{
+   display: none;
+ }
+ #form8{
+    width: 50%;
+ }
+ #btn2{
+    width: 50%;
+ }
+ #imgcrew{
+    display: block;
+    width: 100%;
+    height: 30vh !important;
+ }
+ .footer-wrapper{
+    display: flex;
+    padding: 20px;
+    font-size: small;
+    gap: 5px;
+}
+#icons{
+    font-size: small;
+}
+.footerimg span{
+    gap: 70px;
+}
+.btn9{
+    margin-left: -155px !important;
+}
+  
+}
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------card carousel responsive----------------------------------------------------------- */
+@media (min-width: 500px) {
+    .cards {
+        grid-auto-columns: calc(50% - 10px);
+        grid-column-gap: 20px;
+    }
+}
+
+@media (min-width: 700px) {
+    .cards {
+        grid-auto-columns: calc(calc(100% / 3) - 20px);
+        grid-column-gap: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .cards {
+        grid-auto-columns: calc(25% - 30px);
+        grid-column-gap: 40px;
+    }
+}

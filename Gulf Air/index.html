@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulf Air</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./remixicon/remixicon.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <!-- ---------------------------------------------Navbar1----------------------------------------------------------- -->
+    <header>
+        <div class="navbar1">
+            <button class="joinbtn"><i class="ri-user-fill"></i>&nbsp;Join Falconflyer</button>
+            <button class="loginbtn"><i class="ri-user-3-line"></i>&nbsp;Login</button>
+            <a href="" class="country"><i class="flag flag-india"></i>IN | English</a>
+            <a href="" class="country">| <i class="ri-search-line"></i>&nbsp;Search</a>
+        </div>
+    </header>
+    <!-- ----------------------------------------------Navbar2-------------------------------------------------------------- -->
+    <div class="navbar2">
+        <div class="logo">
+            <img src="./images/white-logo.svg" alt="" class="glogo">
+        </div>
+        <div class="navcontent1">
+            <a href="">Book</a>
+            <a href="">Manage</a>
+            <a href="">Check-in</a>
+            <a href="">Flight Status</a>
+        </div>
+        <div class="navcontent2">
+            <a href=""><i class="ri-arrow-drop-down-line"></i>&nbsp;Explore</a>
+            <a href=""><i class="ri-arrow-drop-down-line"></i>&nbsp;Falconflyer</a>
+            <a href=""><i class="ri-arrow-drop-down-line"></i>&nbsp;Flying with us</a>
+            <a href=""><i class="ri-arrow-drop-down-line"></i>&nbsp;Help</a>
+        </div>
+    </div>
+    <!-- --------------------------------------------------navbar mobile---------------------------------------------------------- -->
+    <nav class="navbar fixed-top" id="nav-mob">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="./images/white-logo.svg" alt="" class="glogo-mob">
+          <button class="navbar-toggler" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span id="icon"><i class="ri-menu-line"></i></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+              <button type="button" id="btnclose" class="close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item d-flex justify-content-between ">
+                  <a class="nav-link" aria-current="page" href="#">Book</a>
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                  <a class="nav-link" href="#">Manage</a>
+                  <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Check-in</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Flight Status</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <hr>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Explore</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Falconflyer</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Flying with Us</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <li class="nav-item d-flex justify-content-between">
+                 <a class="nav-link" href="#">Help</a>
+                 <span><i class="ri-arrow-right-line"></i></span>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <button class="btnmob"><i class="ri-user-fill"></i>&nbsp;Join Falconflyer</button>                
+                </li><br>
+                <li class="nav-item">
+                    <button class="btnmob1"><i class="ri-user-3-line"></i>&nbsp;Login</button>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search For Keyword" aria-label="Search" id="search">
+                <button class="btn1" type="submit"><i class="ri-search-line"></i></button>
+              </form>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
+                <li class="nav-item">
+                    <button class="btnmob"><i class="flag flag-india"></i>IN | English</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- -------------------------------------------------carousel---------------------------------------------------------------- -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/LARNACA.jpg" class="d-block w-100 img-fluid" alt="..."id="larnaca">
+            <div class="carousel-caption  d-md-block">
+              <h1 class="headmob">More Flights to Larnaca</h1>
+              <p class="pmob">3 weekly Flights</p>
+              <input type="button" value="Book now" id="bookbtn">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/china-gettyimages-565786575.jpg" class="d-block w-100 img-fluid" alt="..." id="larnaca">
+            <div class="carousel-caption  d-md-block">
+              <h1 class="headmob">Expanding our Network into China</h1>
+              <p class="pmob">Explore Shanghai and Zuangou soon!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/e-visa.jpg" class="d-block w-100 img-fluid" alt="..." id="larnaca">
+            <div class="carousel-caption  d-md-block">
+              <h1 class="headmob">Our E-visa Service!</h1>
+              <p class="pmob">Skip the wait and time-consuming process with our e-visa service!</p>
+              <input type="button" value="Book now" id="bookbtn">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------------Book------------------------------------------------------------------ -->
+        <div class="book">
+            <div class="ticketcheck">
+                <div class="buttons">
+                  <input type="button" value="Book" id="btnticket" class="bookbtn">
+                  <input type="button" value="Manage" id="btnticket" class="managebtn">
+                  <input type="button" value="Check-in" id="btnticket" class="checkinbtn">
+                  <input type="button" value="Flight Status" id="btnticket" class="flightstatusbtn">
+                </div>
+                <!-- -----------------------------------------------book section---------------------------------------------------- -->
+                <div class="book-main">
+                    <div class="booking">
+                        <ul id="booking">
+                            <li><a href="">FLIGHTS</a></li>
+                            <li><a href="">FLIGHTS & HOTELS</a></li>
+                        </ul>
+                        <hr class="line">
+                    </div>
+                    <div class="radios">
+                        <input type="radio" name="trip" value="roundtrip">&nbsp;Round Trip &ensp;&ensp;
+                        <input type="radio" name="trip" value="oneway">&nbsp;One Way
+                        <a href="" class="advsearch">Advanced Search(promocode,multicity) <i class="ri-question-fill"></i></a>
+                    </div>
+                    <div class="destination">
+                       <div class="booking1">
+                        <label for="">FROM</label><br>
+                        <input type="text" name="" id="cld" placeholder="Origin" value="DELHI" class="form-control">
+                       </div>
+                       <div class="btnarrow">
+                        <button class="arrowbtn"><i class="ri-arrow-left-right-fill"></i></button>
+                       </div>
+                       <div class="booking2">
+                        <label for="">TO</label><br>
+                        <input type="text" name="" id="cld" placeholder="Destination" class="form-control">
+                       </div>&ensp;
+                       <div class="booking3">
+                        <label for="">DATE</label><br>
+                        <input type="date" name="" id="cld" placeholder="24 Nov 2023 - 27 Nov 2023" class="form-control">
+                       </div>
+                    </div>
+                    <div class="travel">
+                        <div id="travel">
+                            <label for="">TRAVELLERS</label>
+                            <input type="text" name="" id="cls" placeholder="1 Traveller" class="form-control">
+                        </div>&ensp;
+                        <div class="classes">
+                            <label for="">CABIN CLASS</label>
+                            <select name="" id="cls" class="form-control">
+                                <option value="">Economy</option>
+                                <option value="">Falcon Gold(Business)</option>
+                            </select>
+                        </div>
+                    </div> 
+                    <div class="btn3">
+                        <input type="button" value="Find Flights" id="btn2">
+                        <input type="button" value="Redeem Miles" class="btn4">
+                    </div>
+                </div>
+               
+<!-- ---------------------------------------------------manage section--------------------------------------------------------------- -->
+                <div class="manage-main">
+                    <div class="manage">
+                        <h5 class="managetitle">&nbsp;MANAGE TRIPS</h5>
+                        <div class="reference">
+                            <div class="bookingreference">
+                                <label for="">BOOKING REFERENCE*</label>
+                                <input type="text" name="" id="cls" placeholder="Booking Reference" class="form-control">
+                            </div>
+                            <div class="lastname">
+                                <label for="">LAST NAME*</label><br>
+                                <input type="text" name="" id="cls" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="btnn">
+                            <div class="btnn1">
+                                <input type="button" value="Search" id="btn2">
+                                <p class="changetext">Change your flight, upgrade your booking, select your seat or add additional details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------Checkin section------------------------------------------------ -->
+                <div class="checkin-main">
+                    <div class="checkin">
+                        <h5 class="managetitle">&nbsp;CHECK-IN</h5>
+                        <div class="reference">
+                            <div class="bookingreference">
+                                <label for="">BOOKING REFERENCE*</label>
+                                <input type="text" name="" id="cls" placeholder="Booking Reference" class="form-control">
+                            </div>
+                            <div class="lastname">
+                                <label for="">LAST NAME*</label><br>
+                                <input type="text" name="" id="cls" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="btnn">
+                            <div class="btnn1">
+                                <input type="button" value="Search" id="btn2">
+                            </div>
+                            <p class="airporttxt">In some airports, Check-in is available starting 24 hours before your scheduled departure. <span class="checkintxt">See our Check-in and Airport Processing Times page for details.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------flight status section-------------------------------------- -->
+                <div class="flightstatus-main">
+                    <div class="flightstatus">
+                        <h5 class="managetitle">&nbsp;FLIGHT STATUS</h5>
+                    </div>
+                    <div id="flightstatus">
+                        <div id="status">
+                            <label for="">FROM</label>
+                            <input type="text" name="" id="" placeholder="Origin" class="form-control">
+                        </div>
+                        <div id="status1">
+                            <label for="">TO</label>
+                            <input type="text" name="" id="" placeholder="Destination"  class="form-control">
+                        </div>
+                        <div id="andor">
+                            <input type="button" value="and/or" class="andorbtn">
+                        </div>
+                        <div class="flightnumber">
+                            <label for="">FLIGHT NUMBER</label>
+                            <input type="text" name="" id="" placeholder="Flight Number"  class="form-control">
+                        </div>
+                        <div class="date">
+                            <label for="">DATE</label>
+                            <input type="date" name="" id=""  class="form-control">
+                        </div>
+                    </div>
+                    <div class="btnn1">
+                            <input type="button" value="Search" id="btn2">
+                        </div>
+                </div>
+                </div>
+        </div>
+        <!-- ----------------------------------------------------book mobile view------------------------------------------------- -->
+
+        <div class="bookmob">
+            <div class="btns">
+                <input type="button" value="Book" class="bookbtnmob"><br>
+                <div class="bookingmob">
+                    <ul id="bookingmob">
+                        <li><a href="">FLIGHTS</a></li>
+                        <li><a href="">FLIGHTS & HOTELS</a></li>
+                    </ul>
+                    <hr>
+                    <a href="" class="advmob">Advanced Search(promocode,multicity) <i class="ri-question-fill"></i></a><br><br>
+                    <form>
+                        <input type="radio" name="trip" value="roundtrip">&nbsp;Round Trip &ensp;&ensp;
+                        <input type="radio" name="trip" value="one way">&nbsp;One Way
+                    </form>
+                    <div class="booking1mob">
+                        <label for="" class="fromtxt">FROM</label><br>
+                        <input type="text" name="" id="" value="DELHI" class="form-control"><br>
+                        <label for="" class="fromtxt">TO</label><br>
+                        <input type="text" name="" id="" placeholder="Destination" class="form-control"><br>
+                        <label for="" class="fromtxt">DATE</label><br>
+                        <input type="text" id="dateInput" name="date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"> <br>                   
+                        <label for="" class="fromtxt">TRAVELLERS</label><br>
+                        <input type="text" name="" id="" placeholder="1 Traveller" class="form-control"><br>
+                        <label for="" class="fromtxt">CABIN CLASS</label><br>
+                        <select name="" id="" class="form-control">
+                            <option value="">Economy</option>
+                            <option value="">Falcon Gold(Business)</option>
+                        </select><br>
+                        <input type="button" value="Find Flights" class="btnmob2"><br><br>
+                        <input type="button" value="Redeem Miles" class="btnmob3">
+                        </div>
+                    </div>
+                <input type="button" value="Manage" class="managebtnmob"><br>
+                <div class="managemob">
+                    <h5 class="mngtrp">MANAGE TRIPS</h5>
+                    <label for="" class="fromtxt">BOOKING REFERENCE*</label>
+                    <input type="text" name="" id="" placeholder="Booking Reference" class="form-control"><br>
+                    <label for="" class="fromtxt">LAST NAME*</label><br>
+                    <input type="text" name="" id="" placeholder="Last Name" class="form-control"><br>
+                    <input type="button" value="Search" class="btnmob2"><br><br>
+                    <p class="changetext1">Change your flight, upgrade your booking, select your seat or add additional details.</p>
+
+                </div>
+                <input type="button" value="Check-in" class="checkinbtnmob"><br>
+                <div class="checkmob">
+                    <h5 class="mngtrp">CHECKIN</h5>
+                    <label for="" class="fromtxt">BOOKING REFERENCE*</label>
+                    <input type="text" name="" id="" placeholder="Booking Reference" class="form-control"><br>
+                    <label for="" class="fromtxt">LAST NAME*</label><br>
+                    <input type="text" name="" id="" placeholder="Last Name" class="form-control"><br>
+                    <input type="button" value="Search" class="btnmob2"><br><br>
+                    <p class="changetxt1">In some airports, Check-in is available starting 24 hours before your scheduled departure. <span class="checkintxt">See our Check-in and Airport Processing Times page for details.</span></p>
+
+                </div>
+                <input type="button" value="flightstatus" class="flightstatusbtnmob"><br>
+                <div class="fltstatusmob">
+                    <h5 class="mngtrp">FLIGHT STATUS</h5>
+                        <label for="" class="fromtxt">FROM</label>
+                        <input type="text" name="" id="" placeholder="Origin" class="form-control"><br>
+                        <label for="" class="fromtxt">TO</label>
+                        <input type="text" name="" id="" placeholder="Destination"  class="form-control"><br>
+                        <input type="button" value="and/or" class="andorbtn"><br><br>
+                        <label for="" class="fromtxt">FLIGHT NUMBER</label>
+                        <input type="text" name="" id="" placeholder="Flight Number"  class="form-control"><br>
+                        <label for="" class="fromtxt">DATE</label>
+                        <input type="text" id="dateInput" name="date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')" class="form-control"> <br>  
+                        <input type="button" value="Search" class="btnmob2"><br><br>
+                 
+                </div>
+            </div>
+        </div>
+       <!-- --------------------------------------------View Offers section------------------------------------------------------------ -->
+       <div class="viewoffers">
+        <h2 class="offerhead">View Offers From
+        <select name="" id="offerdrp" class="form-control-lg">
+            <option value="" >Delhi</option>
+            <option value="" >Amman</option>
+            <option value="" >Bahrain</option>
+            <option value="" >Bangkok</option>
+            <option value="" >Dubai</option>
+            <option value="" >Qatar</option>
+            <option value="" >Kuwait</option>
+        </select>&nbsp;
+    </h2>
+    <div class="container">
+        <ul class="cards">
+            <li class="card" id="c1">
+                <div>
+                    <h3 class="card-title" id="ctitle">Amman</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 49,927</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>
+                </div>
+            </li>
+            <li class="card" id="c2">
+                <div>
+                    <h3 class="card-title" id="ctitle">Athens</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 68,167</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>                
+                </div>
+            </li>
+            <li class="card" id="c3">
+                <div>
+                    <h3 class="card-title" id="ctitle">Bahrain</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 55,267</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>                    
+                 </div>
+            </li>
+            <li class="card" id="c4">
+                <div>
+                    <h3 class="card-title" id="ctitle">Bangkok</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 90,267</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>                  
+                </div>
+            </li>
+            <li class="card" id="c5">
+                <div>
+                    <h3 class="card-title" id="ctitle">Milan</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 54,247</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>                   
+                </div>
+            </li>
+            <li class="card" id="c6">
+                <div>
+                    <h3 class="card-title" id="ctitle">Rome</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 56,332</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>
+                </div>
+            </li>
+            <li class="card" id="c7">
+                <div>
+                    <h3 class="card-title" id="ctitle">Tbilisi</h3>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="" class="card-link" id="card-link">Economy From</a><br>
+                    <a href="" class="card-link" id="card-link" style="margin-left: -145px;">INR 51,210</a><br>
+                    <a href="" id="arrow"><i class="ri-arrow-right-line"></i></a>                
+                </div>
+            </li>
+        </ul>
+    </div><br>
+    <input type="button" value="View All Offers" class="offerbtn"><br><br>
+       </div><br>
+       <!-- ------------------------------------------F1 Image section------------------------------------------------------------- -->
+       <div class="f1">
+        <div class="f1content">
+            <img src="./images/F1-C.jpg" alt="" class="img-f1">
+            <div class="textf1">
+                <h1>20 Years in F1®</h1>
+                <p>Secure your spot at Formula 1 Gulf Air Bahrain Grand Prix 2024, <span>Marking the 20th Anniversary of Formula 1® racing in bahrain</span></p>
+                <input type="button" value="Read More" class="grandprixbtn">
+            </div>
+        </div>
+       </div>
+       <!-- ---------------------------------------Carousel 2------------------------------------------------------------------- -->
+       <div class="carousel2">
+        <header class="carouselmob">
+            <section class="slider">
+                <ul>
+                    <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">Boeing 787-9 Dreamliner</h3>
+                            <p>Elevate your air travel experience with the Airbus 320-200 aircraft from Gulf Air. With its modern features and state-of-the-art technology, this aircraft promises to provide you with a truly exceptional journey.</p>                    
+                            <a href="#about" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">Airbus A321neo</h3>
+                            <p>Revel in the luxurious experience of our Airbus A321neo. Boasting 16 Falcon Gold seats and 150 seats in the Economy cabin, this aircraft is the perfect blend of cutting-edge technology and modern innovation.</p>
+                            <a href="#" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                  <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">Airbus A320neo</h3>
+                            <p>With 16 luxurious Falcon Gold seats, a spacious Economy cabin fitted with 120 seats, and exceptional service and hospitality, get ready for a comfortable and enjoyable journey to and from your final destination with us.</p>
+                            <a href="#" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">A320neo HD</h3>
+                            <p>Elevating your flight experience with the comfort and quality of the Airbus 320 neo-HD aircraft. Equipped with 12 seats in the Falcon Gold cabin and 138 seats in Economy class, offering you optimal personal space and seamless in-flight entertainment streamed directly to your personal device.</p>
+                            <a href="#" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">A321ER</h3>
+                            <p>Experience our Airbus 321ER aircraft boasting state-of-the-art technology and modern innovation in comfort and functionality.</p>
+                            <a href="#" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="center-y padding_2x">
+                            <h3 class="big title">Airbus 320-200</h3>
+                            <p>Elevate your air travel experience with the Airbus 320-200 aircraft from Gulf Air. With its modern features and state-of-the-art technology, this aircraft promises to provide you with a truly exceptional journey.</p>
+                            <a href="#" class="btn btn_3">Step Onboard</a>
+                        </article>
+                    </li>
+                    <aside>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      <a href="#"></a>
+                      <a href=""></a>
+                      <a href=""></a>
+                      <a href=""></a>
+                    </aside>
+                </ul>
+            </section>
+            <a href="#services" class="cs-down"></a>
+        </header>
+        <!---------------------------------------------------Carousel CSS--------------------------------------------------------------  -->
+        <style>
+           
+        *, html{
+            scroll-behavior: smooth;
+        }
+        
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        :root{
+            --white:#FFF;
+            --black:#232323;
+            --lite:rgba(255,255,255,0.6);
+            --gray:rgba(1,1,1,0.6);
+            --dark:#3c3d3c;
+            --primary:linear-gradient(145deg,#ff2f09,#c24a4e);
+            --primary_dark:#970104;
+            --primary_lite:#c24a4e;
+            --secondary:#000a17;
+            --default_font:'Ysabeau Infant', sans-serif;
+            --title_font:'Outfit', sans-serif;
+        }
+        
+        ::-webkit-scrollbar {
+            height: 12px;
+            width: 8px;
+            background: var(--dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            -webkit-box-shadow: 0px 1px 2px var(--dark);
+        }
+        
+        ::-webkit-scrollbar-corner {
+            background: var(--dark);
+        }
+        a{
+            text-decoration:none !important;
+            min-width: fit-content;
+            width: fit-content;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+        }
+        
+        a, button{
+            transition:0.5s;
+        }
+        
+        
+        
+        a, p, .btn{
+            font-size:15px;
+        }
+        
+        p{
+            line-height:1.9em;
+            color:var(--lite);
+        }
+        
+        a, button, input, textarea, select{
+            outline:none !important;
+        }
+        
+        fieldset{
+            border:0;
+        }
+        
+        h1, h2, h3, h4, h5, h6{
+            margin:0;
+        }
+        
+        .title, .sub_title{
+            font-family:var(--title_font);
+            font-weight:400;
+            margin:0;
+        }
+        
+        .flex, .fixed_flex{
+            display:flex;
+        }
+        
+        .flex_content{
+            width:100%;
+            position:relative;
+        }
+        
+        .padding_1x{
+            padding:1rem;
+        }
+        
+        .padding_2x{
+            padding:2rem;
+        }
+        
+        .padding_3x{
+            padding:3rem;
+        }
+        
+        .padding_4x{
+            padding:4rem;
+        }
+        
+        .big{
+            font-size:3.5em;
+        }
+        
+        .medium{
+            font-size:2em;
+        }
+        
+        .small{
+            font-size:1.3em;
+        }
+        
+        .btn{
+            padding:1rem;
+            border-radius:5px;
+            color:var(--white);
+            position:relative;
+            border:0;
+            text-align:center;
+            
+        }
+        
+        .btn_3{
+            display:block;
+            background-color:0;
+            color:var(--white);
+            position:relative;
+            font-family:var(--default_font);
+            font-weight:400;
+            text-transform:uppercase;
+        }
+        
+        .btn_3:before{
+            content:"";
+            border-radius:50%;
+            background-color:rgba(255,255,255,0.2);
+            position:absolute;
+            left:0;
+            top:50%;
+            width:40px;
+            height:40px;
+            transition:0.5s;
+            transform:translate(0%, -50%);
+        }
+        
+        .btn_3:after{
+            content:"\f178";
+            font-family:"FontAwesome";
+            margin-left:5px;
+        }
+        
+        .btn_3:hover:before{
+            border-radius:40px;
+            width:100%;
+        }
+        
+        @media (max-width:920px){
+            .flex{
+                flex-wrap:wrap;
+            }
+            
+            .padding_1x, .padding_2x, .padding_3x, .padding_4x{
+                padding:1rem;
+            }
+            
+            .big{
+                font-size:1.8em;
+            }
+            
+            .medium{
+                font-size:1.3em;
+            }
+            
+            .small{
+                font-size:1.1em;
+            }
+            
+            .btn{
+                padding:0.5rem 1rem;
+            }
+            
+            a, p, .btn{
+                font-size:12px;
+            }
+        }
+        
+        .slider {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        ul{
+            padding:0;
+            margin:0;
+        }
+        
+        .slider .title{
+            font-weight:400;
+        }
+        
+        .slider li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            transition: clip .7s ease-in-out, z-index 0s .7s;
+            clip: rect(0, 100vw, 100vh, 100vw);
+            display:flex;
+            align-items:center;
+            justify-content:left;
+        }
+        
+        .slider li:nth-child(1){
+            background:url("./images/787-9\ seat.jpg");
+            background-size: cover;
+            background-position:top left;
+        }  
+        
+        .slider li:nth-child(2){
+            background: url("./images/Passnger\ on\ Falcon\ gold\ cabin.jpg");
+            background-size: cover;
+            background-position:top left;
+        }
+        
+        .slider li:nth-child(3){
+            background: url("./images/A\ 320D.jpg");
+            background-size: cover;
+            background-position:top left;
+        }
+        .slider li:nth-child(4){
+            background: url("./images/A320\ D-Falcon\ Gold.jpg");
+            background-size: cover;
+            background-position:top left;
+        }
+        .slider li:nth-child(5){
+            background: url("./images/HighresScreenshot00002.jpg");
+            background-size: cover;
+            background-position:top left;
+        }
+        .slider li:nth-child(6){
+            background: url("./images/BC-4.jpg");
+            background-size: cover;
+            background-position:top left;
+        }
+        
+        .slider article{
+            width:50%;
+            margin-top:4rem;
+            color: #fff;
+            z-index:11;
+        }
+        
+        .slider h3 + p {
+            display: inline-block;
+            color: var(--lite);
+            font-weight:300;
+        }
+        
+        .slider h3, .slider h3 + p, .slider p + .btn, li:after{
+            opacity: 0;
+            transition: opacity .7s 0s, transform .5s .2s;
+            transform: translate3d(0, 50%, 0);
+            color: whitesmoke;
+        }
+        
+        li.current h3, li.current h3 + p, li.current p + .btn, li.current:after {
+            opacity: 1;
+            transition-delay: 1s;
+            transform: translate3d(0, 0, 0);
+        }
+        
+        .slider li:before{
+            transition: 0.5s;
+            top:-250px !important;
+        }
+        
+        li.current:before{
+            transition-delay: 1s;
+            transform: rotate(-90deg);
+            top:-20px !important;
+        }
+        
+        li.current {
+            z-index: 1;
+            clip: rect(0, 100vw, 100vh, 0);
+        }
+        
+        li.prev {
+            clip: rect(0, 0, 100vh, 0);
+        }
+        
+        .slider aside {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        .slider aside a {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            min-width: 8px;
+            min-height: 8px;
+            background-color: var(--white);
+            margin: 0 0.2rem;
+            transition: transform .3s;
+        }
+        a.current_dot {
+            transform: scale(1.4);
+            background:#0dcaf0 !important;
+        }
+        
+        @media screen and (max-width: 920px) {
+            header{
+                height:70vh;
+                position:relative;
+            }
+            
+            .cs-down{
+                display:none;
+            }
+        
+            .slider{
+                height:70vh;
+            }
+            
+            .slider article{
+                width:100%;
+                margin-top:2rem;
+            }
+            
+            .slider li:nth-child(2){
+                background-position:top center;
+            }
+            
+            .slider li:nth-child(3){
+                background-position:top center;
+            }
+            
+            li.current:before{
+                top:-30px;
+                right:-10px;
+            }
+        }
+        </style>
+<!-- -----------------------------------------------Carousel javascript code------------------------------------------------------------- -->
+        <script>
+            {
+          class SliderClip {
+            constructor(el) {
+              this.el = el;
+              this.Slides = Array.from(this.el.querySelectorAll('li'));
+              this.Nav = Array.from(this.el.querySelectorAll('aside a'));
+              this.totalSlides = this.Slides.length;
+              this.current = 0;
+              this.autoPlay = false; //true or false
+              this.timeTrans = 4000; //transition time in milliseconds
+              this.IndexElements = [];
+        
+              for (let i = 0; i < this.totalSlides; i++) {
+                this.IndexElements.push(i);
+              }
+        
+              this.setCurret();
+              this.initEvents();
+            }
+            setCurret() {
+              this.Slides[this.current].classList.add('current');
+              this.Nav[this.current].classList.add('current_dot');
+            }
+            initEvents() {
+              const self = this;
+        
+              this.Nav.forEach(dot => {
+                dot.addEventListener('click', ele => {
+                  ele.preventDefault();
+                  this.changeSlide(this.Nav.indexOf(dot));
+                });
+              });
+        
+              this.el.addEventListener('mouseenter', () => self.autoPlay = false);
+              this.el.addEventListener('mouseleave', () => self.autoPlay = true);
+        
+              setInterval(function () {
+                if (self.autoPlay) {
+                  self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
+                  self.changeSlide(self.current);
+                }
+              }, this.timeTrans);
+        
+            }
+            changeSlide(index) {
+        
+              this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
+        
+              this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
+        
+              const getAllPrev = value => value < index;
+        
+              const prevElements = this.IndexElements.filter(getAllPrev);
+        
+              prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
+        
+              this.Slides[index].classList.add('current');
+              this.Nav[index].classList.add('current_dot');
+            }}
+        
+        
+          const slider = new SliderClip(document.querySelector('.slider'));
+        }
+        </script>
+       </div>
+       <!-- -------------------------------------------------Help section------------------------------------------------------------- -->
+       <div class="helpsection">
+        <h1>How can we help?</h1>
+        <div class="search">
+            <div class="search1">
+                <p>Easily search for what you are looking for</p>
+                <input type="text" id="text-box" value="" readonly>
+            </div>
+        </div>
+       </div>
+       <!-- ---------------------------------------------------Quick Support Carousel------------------------------------------------ -->
+       <div class="quicksupport">
+        <h1>Quick Support Links</h1>
+        <link rel="stylesheet" href="./swiper-bundle.min.css">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay1">
+                                <img src="./images/New-website-images-Baggage.jpg" alt="" class="baggageimg">
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Baggage</h2>
+                            <p class="description">Extra Baggage,Baggage Allowance,Claims and more</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay2">
+                                <img src="./images/New-website-images-Visa.jpg" alt="" class="baggageimg">
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Travel Requirements</h2>
+                            <p class="description">Get ready to travel? Remember your Travel Requirement</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay3">
+                                <img src="./images/New-website-images-Contact-us.jpg" alt="" class="baggageimg">
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Contact Us</h2>
+                            <p class="description">Contact our Support Team available 24/7</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn" style="display: none;"></div>
+            <div class="swiper-button-prev swiper-navBtn" style="display: none;"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    
+    </div><br>
+
+    <style>
+
+
+.baggageimg{
+  height: 101%;
+  width: 113%;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 15px;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 94%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+ height: 304px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+  position: relative;
+}
+.card, .card-content{
+    margin-top: 135px !important;
+    max-width: 100% !important;
+
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 604%;
+  width: 100%;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 604%;
+  width: 100%;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 604%;
+  width: 100%;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+.description{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+    </style>
+    <script src="./swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+    </script>
+    <!-- ----------------------------------------------------Visit Bahrain section--------------------------------------------- -->
+    <div class="visitbahrain">
+        <div class="bimage">
+            <img src="./images/Bahrain.webp" alt="">
+            <a href="./images/LET'S GO BAHRAIN 4K Final Outro2.mp4" class="btnvideo"><i class="ri-play-circle-fill"></i></a>
+        </div>
+        <div class="bahrain">
+            <div class="stopover">
+                <h6>BAHRAIN STOPOVER</h6>
+                <h1>Visit Bahrain</h1>
+            <div class="stopover2">
+                <p>Experience the Kingdom of Bahrain and all it has to offer – from events, <br> to history and culture, to local-living and more!</p>
+                <input type="button" value="Discover More" class="btn4">
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------Gulf air app section----------------------------------------------------- -->
+    <div class="gulfairapp">
+        <div class="apptext">
+            <h2>The Gulf Air APP</h2><br>
+            <p>With the Gulf Air App, we've made travelling with us easier!</p>
+            <a href="https://play.google.com/store/apps/details?id=com.gulfair.android&pli=1"><img src="./images/01-AND-playstore.svg" alt="" width="35%"></a>
+            <a href="https://apps.apple.com/kw/app/gulf-air/id1442202907"><img src="./images/Appstore Image.svg" alt="" width="35%"></a>
+        </div>
+            <div class="qrimg">
+                <img src="./images/gulf-air-app-qr.svg" width="25%">
+            </div>
+      
+        <div class="appimg">
+            <img src="./images/app-banner.png" alt="">
+        </div>
+    </div><br><br>
+    <!-- -----------------------------------------------------NewsLetter Section-------------------------------------------------- -->
+    <div class="newsletter">
+        <img src="./images/newsletter.png" alt="" id="imgcrew">
+        <div id="newslettertext">
+           <div class="ntext">
+            <div class="textnews"><br>
+                <h2>Sign up for our newsletter</h2>
+                <p>and receive the latest updates, offers and promotions straight to your inbox.</p>
+               </div>
+              
+            </div>
+           <div id="form">
+            <div class="form">
+                <select name="" class="form-control-lg" id="form8">
+                    <option value="">Mr</option>
+                    <option value="">Mrs</option>
+                </select>
+            </div><br>
+            <div class="form1">
+                <input type="text" placeholder="First Name" class="form-control-lg" id="form8" required>
+            </div><br>
+            <div class="form3">
+                <input type="text" placeholder="Last Name" class="form-control-lg" id="form8" required>
+            </div>
+           </div><br>
+           <div class="formtext">
+            <div class="form2">
+                <input type="text" placeholder="Email Address" class="form-control-lg" id="form8" required>
+            </div><br>
+            <div class="form4">
+                <input type="button" value="Sign up" class="form-control-lg" id="btn2" id="form8" required>
+            </div>
+           </div>
+           <div class="marketing">
+            <p>By signing up to the Gulf Air Newsletter, you consent to receive marketing and promotional emails to the email address provided and agree to the terms & conditions and privacy policy</p>
+           </div>
+           </div>
+        <div class="newsletterimg">
+            <img src="./images/newsletter.png" alt="">
+        </div>
+    </div><br>
+    <!-- ------------------------------------------------------Footersection---------------------------------------------------------- -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footercontent">
+                <ul>
+                    <li class="fthead">About Gulf Air</li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Executive Management</a></li>
+                    <li><a href="">Media Center</a></li>
+                </ul>
+            </div><br>
+            <div class="footercontent1">
+                <ul>
+                    <li  class="fthead">Services</li>
+                    <li><a href="">Book Hotels </a></li>
+                    <li><a href="">Book a car </a></li>
+                    <li><a href="">Flight Pass </a></li>
+                    <li><a href="">Travel Insurance </a></li>
+                    <li><a href="">E-Visa</a></li>
+                </ul>
+            </div><br>
+            <div class="footercontent2">
+                <li  class="fthead">Transparency</li>
+                <li><a href="">Conditions of Carriage</a></li>
+                <li><a href="">Liability for Damage</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Agent Debit Memo Policy</a></li>
+                <li><a href="">Binding Corporate Rules</a></li>
+                <li><a href="">Refund Policy</a></li>
+            </div><br>
+            <div class="footercontent3">
+                <li  class="fthead">Other</li>
+                <li><a href="">Cargo</a></li>
+                <li><a href="">Flight Status</a></li>
+                <li><a href="">Gulf Air App</a></li>
+            </div><br>
+            <div class="footercontent4">
+              
+                    <a href=""><i class="ri-facebook-box-fill" id="icons"></i></a>
+                    <a href=""><i class="ri-twitter-x-fill" id="icons"></i></a>
+                    <a href=""><i class="ri-youtube-fill" id="icons"></i></a>
+                    <a href=""><i class="ri-linkedin-box-fill" id="icons"></i></a>
+                    <a href=""><i class="ri-instagram-line" id="icons"></i></a>
+            </div>
+            <div class="footerimg">
+                <ul>
+                    <li><a href=""><img src="./images/ft-logo.svg" alt=""></a></li>
+                 <br><br><br>
+                 <span>
+                    <li><a href=""><img src="./images/skytrax-icon.png" alt="" id="skytrax"></a></li>
+                    <li><a href=""><img src="./images/apex-icon.png" alt="" id="skytrax1"></a></li>
+                    <li><a href=""><img src="./images/covid19-icon.png" alt="" id="skytrax"></a></li>
+                 </span>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- --------------------------------------------Newsletter section-------------------------------------------- -->
+    <div class="subscribe">
+        <div class="news">
+            <h3>Subscribe to our Newsletter</h3>
+            <p>to receive updates on deals</p>
+            <div id="email">
+                <div class="email">
+                    <input type="text" placeholder="Email Address" class="form-control-lg">
+                </div>
+                <div class="signup">
+                    <input type="button" value="Sign up" id="btn3">
+                </div>
+            </div>
+        </div><br>
+        <div class="hear">
+            <p class="heartext">We want to hear from you</p>
+            <p class="exp">Improving our customers' experiences whether at the airport, in the air or online is our primary focus.</p>
+        </div>
+        <div class="btns1">
+            <input type="button" value="Share Feedback" class="btn9">&nbsp;
+            <input type="button" value="Contact us" id="btn9">
+        </div>
+    </div>
+    <!-- -------------------------------------------------Rights reserved section------------------------------------------------- -->
+    <div class="reserved">
+<div class="rights">
+    <p>All right reserved © 2023 - Gulf Air</p>
+</div>
+<div class="privacy">
+  
+        <a href="">Privacy Policy &nbsp;|</a>&nbsp;
+        <a href="">Terms & Conditions</a>
+   
+</div>
+    </div>
+    </body>
+</html>
