@@ -764,7 +764,7 @@ font-family: "Montserrat";
         height: 550px;
     }
     .carousel-caption{
-        bottom: 10rem !important;
+        bottom: 8rem !important;
         text-align: left !important;
     }
     .headmob{
@@ -1152,10 +1152,18 @@ top: -12px;
     }
 }
 
+@media(min-width:392px) and (max-width:394px){
+    .fltstatusmob, .bookingmob, .managemob, .checkmob{
+        margin-left: 12px;
+    }
+}
 
 
-
-
+@media(min-width:427px) and (max-width:429px){
+    .fltstatusmob, .bookingmob, .managemob, .checkmob{
+        margin-left: 30px;
+    }
+}
 
 
 
