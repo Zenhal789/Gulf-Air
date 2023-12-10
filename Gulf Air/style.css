@@ -473,7 +473,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 .bahrain{
-    width: 70%;
+    width: 100%;
     background: #00a09c;
     height: auto;
     display: flex;
@@ -565,13 +565,9 @@ h2 {
     letter-spacing: 2px;
     text-align: center;
 }
-
 #imgcrew{
     display: none;
 }
-/* .textnews h2{
-    font-family: ;
-} */
 .marketing{
     padding: 0 141px;
 }
@@ -854,8 +850,8 @@ font-family: "Montserrat";
    .bookingmob, .managemob, .checkmob, .fltstatusmob{
     background-color: whitesmoke;
     height: auto;
-    width: 330px;
-    margin-left: 21px;
+    width: 328px;
+    margin-left: 23px;
 
    }
  #bookingmob{
@@ -1004,8 +1000,8 @@ top: -12px;
  #newslettertext{
     width: 100%;
     text-align: center;
-    height: auto;
     border-radius: 0;
+    height: 620px;
  }
  .newsletterimg img{
    display: none;
@@ -1056,7 +1052,9 @@ top: -12px;
     display: block;
     text-align: center;
 }
-
+.br{
+    display: none;
+}
 
 }
 
@@ -1165,13 +1163,44 @@ top: -12px;
     }
 }
 
+@media(min-width:500px) and (max-width:520px){
+        .fltstatusmob, .bookingmob, .managemob, .checkmob{
+            position: relative;
+            left: 45%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+}
 
 
+@media(min-width:520px) and (max-width:767px){
+        .fltstatusmob, .bookingmob, .managemob, .checkmob{
+            position: relative;
+            left: 46.5%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+}
 
 
+@media(min-width:450px) and (max-width:500px){
+        .fltstatusmob, .bookingmob, .managemob, .checkmob{
+            position: relative;
+            left: 44.5%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+}
 
 
-
+@media(min-width:432px) and (max-width:450px){
+        .fltstatusmob, .bookingmob, .managemob, .checkmob{
+            position: relative;
+            left: 44%;
+            transform: translateX(-50%);
+            position: relative;
+        }
+}
 
 
 
@@ -1298,7 +1327,7 @@ top: -12px;
    .bookingmob, .managemob, .checkmob, .fltstatusmob{
     background-color: whitesmoke;
     height: auto;
-    width: 530px;
+    width: 526px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1403,9 +1432,8 @@ top: -12px;
  #newslettertext{
     width: 100%;
     text-align: center;
-    height: auto;
     border-radius: 0;
-
+    height: 580px;
  }
  .newsletterimg img{
    display: none;
@@ -1436,11 +1464,32 @@ top: -12px;
 .btn9{
     margin-left: -155px !important;
 }
+.br, .br2{
+    display: none;
+}
+#skytrax, #skytrax1, #skystrax2 {
+    width: 5%;
+}
   
 }
 
+@media(min-width:1400px) and (max-width:2000px){
+    .btns1{
+        display: flex;
+    }
+}
 
-
+@media (min-width: 768px) and (max-width: 1024px){
+.footerimg span {
+    gap: 54px;
+}
+.btn9{
+    margin-left: 0 !important;
+}
+#btn9{
+    margin-top: 15px;
+}
+}
 
 
 
